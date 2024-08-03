@@ -1,5 +1,6 @@
 import random
 import turtle
+
 from tkinter import simpledialog
 
 
@@ -15,6 +16,33 @@ if __name__ == '__main__':
     window.bgcolor('white')
 
     # TODO 1) Create a new Turtle
+    my_turtle = turtle.Turtle()
+    turtle.pensize(10)
+    pen_color = simpledialog.askstring('hi', 'which color would you like to draw with?')
+    if pen_color == 'red':
+        turtle.pencolor('red')
+    elif pen_color == 'orange':
+        turtle.pencolor('orange')
+    elif pen_color == 'yellow':
+        turtle.pencolor('yellow')
+    elif pen_color == 'green':
+        turtle.pencolor('green')
+    elif pen_color == 'blue':
+        turtle.pencolor('blue')
+    elif pen_color == 'purple':
+        turtle.pencolor('purple')
+    else:
+        sdf = get_random_color()
+        turtle.pencolor(sdf)
+
+
+    for i in range(4):
+        turtle.forward(100)
+        turtle.left(90)
+
+
+
+
     #      2) Make the turtle draw a shape (this will take more than one line
     #         of code)
     #      3) Set the pen width to 10
