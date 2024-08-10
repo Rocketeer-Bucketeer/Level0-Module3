@@ -13,6 +13,10 @@ def play_mister_zee():
 
 def many_shiny_objects():
     # TODO 1) Call the method above to play Mister Zee
+    play_mister_zee()
+    shiny = simpledialog.askstring('hi', 'how many shiny objects do you want?')
+    for i in range(shiny):
+        print(shiny.__str__)
 
     # TODO 2) Ask the user how many shiny objects they want
 
